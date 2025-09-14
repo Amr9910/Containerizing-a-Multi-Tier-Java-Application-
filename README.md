@@ -8,7 +8,6 @@ This project introduces participants to containerization concepts using Docker. 
 Docker, Docker Compose, Java, Tomcat, MySQL, Nginx.
 
 # Prerequisite
-Prerequisites: 
 1.DevOps Tools Knowledge 
 2.Basic knowledge of Docker and containerization. 
 3.Familiarity with Java web application architectures. 
