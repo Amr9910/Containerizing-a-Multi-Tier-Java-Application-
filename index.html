@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع Jenkins التجريبي</title>
+    <!-- تحميل Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* تعيين خط "Inter" كخط أساسي للتصميم الجذاب */
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f4f6; /* خلفية فاتحة */
+        }
+    </style>
+</head>
+<body>
+    <!-- بطاقة المحتوى الرئيسية (Responsive Card) -->
+    <div class="max-w-xl w-full mx-4 p-8 bg-white shadow-2xl rounded-xl border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:scale-[1.02]">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 text-center">
+            Jenkins CI/CD Demo
+        </h1>
+        <p class="text-lg text-indigo-600 font-medium mb-6 text-center">
+            تطبيق جاهز للـ (Test & Build)
+        </p>
+
+        <!-- قسم الحالة -->
+        <div class="space-y-4">
+            <div class="bg-green-50 p-4 rounded-lg flex items-center shadow-md">
+                <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <p class="text-gray-700 font-semibold">الملف جاهز للـ **Build**</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg flex items-center shadow-md">
+                <svg class="w-6 h-6 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                <p class="text-gray-700 font-semibold">تم الرفع بنجاح على **GitHub**</p>
+            </div>
+        </div>
+
+        <p class="text-sm text-gray-500 mt-8 text-center">
+            سيقوم Jenkins بسحب هذا المستودع لبدء عملية الأتمتة.
+        </p>
+
+        <!-- زر وهمي للتجربة -->
+        <button onclick="alert('عملية البناء والاختبار ناجحة!')" class="mt-6 w-full py-3 bg-indigo-600 text-white font-bold text-lg rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 transition duration-300 transform hover:-translate-y-0.5">
+            عرض حالة الـ Pipeline
+        </button>
+        <!-- ملاحظة: في التطبيقات الحقيقية، يجب استخدام مربع حوار مخصص بدلاً من alert() -->
+
+        <script>
+            // يمكنك إضافة اختبارات JavaScript بسيطة هنا ليقوم Jenkins بتشغيلها
+            // مثلاً: التحقق من وجود عنصر معين في الصفحة.
+            document.addEventListener('DOMContentLoaded', () => {
+                const title = document.querySelector('h1').textContent;
+                console.log(`تم تحميل عنوان الصفحة: ${title}`);
+                // هذا السطر يمكن أن يكون جزءاً من اختبار (Test) في مرحلة لاحقة.
+            });
+        </script>
+    </div>
+</body>
+</html>
